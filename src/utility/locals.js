@@ -1,10 +1,10 @@
 const getArray =()=>{
     const storedArray=localStorage.getItem("item")
     if (storedArray){
-        return JSON.parse(storedArray)
+        return JSON.parse(storedArray);
     }
     else{
-        return []
+        return [];
     }
 }
 const setArray=(data)=>{
@@ -21,4 +21,4 @@ const localstorage = (data) => {
 
 };
 
-export {localstorage,getArray};
+export {localstorage, getArray};

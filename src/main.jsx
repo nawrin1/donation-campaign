@@ -8,8 +8,9 @@ import {
 } from "react-router-dom";
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
-import Donation from './components/Donation/Donation';
+
 import DonationDetails from './components/DonationDetails/DonationDetails';
+import Donation from './components/Donation/Donation';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       {
         path:'/donation',
         element:<Donation></Donation>
+        // element:<Donation></Donation>
       },
       {
         path:'/home/:id',

@@ -1,16 +1,31 @@
-import { useState } from "react";
-import { getArray } from "../../utility/localstorage";
+import { useEffect, useState } from "react";
+import { getArray } from "../../utility/locals";
+import Donates from "../Donates/Donates";
 
 
 const Donation = () => {
     const [arr,setArr]=useState([])
-    const get=getArray()
-    setArr([...arr,get])
-    console.log(arr)
+    
+    useEffect(()=>{
+        const array=getArray()
+        console.log(array)
+        if(array.length>0){
+            setArr(array)
+            console.log(arr)
+        }
+    },[])
+
+
+
 
     return (
-        <div>
-            <h2>donate</h2>
+        <div className="">
+            {
+                arr.length>0?<Donates arr={arr}></Donates>:""
+            }
+
+
+
 
             
         </div>
