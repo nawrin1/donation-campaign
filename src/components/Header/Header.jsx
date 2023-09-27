@@ -7,9 +7,9 @@ const Header = () => {
     
     
     return (
-        <div className="flex relative top-[52px] flex-col md:flex-row lg:flex-row justify-between mx-4 max-w-[1100px] lg:mx-auto place-items-center">
+        <div className="flex flex-col md:flex-row lg:flex-row justify-between mx-4 max-w-[1100px] lg:mx-auto place-items-center">
             <div>
-                <img src="/src/assets/Resources/Logo.png" alt="" />
+                <img src="/Logo.png" alt="" />
 
             </div>
             <nav className="flex gap-12 mt-4 font-Inter text-[18px] font-[700]">

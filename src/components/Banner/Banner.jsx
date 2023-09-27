@@ -8,7 +8,7 @@ const Banner = ({handleClick}) => {
         e.preventDefault()
 
         console.log(e.target.text.value)
-        // setValue(e.target.text.value)
+       
         handleClick(e.target.text.value)
         
     }
