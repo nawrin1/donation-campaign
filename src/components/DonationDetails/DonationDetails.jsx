@@ -52,8 +52,8 @@ const DonationDetails = () => {
                     
                 </div>
                 <div className="mt-[56px] mx-auto lg:mx-auto w-[400px] h-[200px] lg:w-[1100px]">
-                    <h2 className="text-[40px] font-[700]">{title}</h2>
-                    <p className="text-[16px] font-[400] text-[ rgba(11, 11, 11, 0.70)] mt-[24px] ">{description}</p>
+                    <h2 className="text-[40px] font-Inter font-[700]">{title}</h2>
+                    <p className="text-[16px] font-Inter font-[400] text-[ rgba(11, 11, 11, 0.70)] mt-[24px] ">{description}</p>
     
                 </div>
                 

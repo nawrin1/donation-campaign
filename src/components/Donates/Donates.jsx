@@ -5,20 +5,24 @@ import Element from "../Element/Element";
 const Donates = ({arr}) => {
     console.log(arr,"aaa")
     const [length,setLength]=useState(4)
-    const[button,setButton]=useState('See All')
+    // const[button,setButton]=useState('See All')
     const[btn,setBtn]=useState(true)
     const handleShow=(btn)=>{
-        setBtn(!btn)
-        if (btn){
-            setButton("Show All")
-            setLength(4)
+        setLength(btn)
+        setBtn(false)
+        
+
+        // setBtn(!btn)
+        // if (btn){
+        //     // setButton("Show All")
+        //     setLength(4)
     
     
-        }
-        else{
-            setButton("See Less")
-            setLength(arr.length)
-        }
+        // }
+        // else{
+        //     // setButton("See Less")
+        //     // setLength(arr.length)
+        // }
     }
 
     
@@ -31,8 +35,8 @@ const Donates = ({arr}) => {
             {
                 arr.slice(0,length).map(element=><Element element={element}></Element>)
             }
-            <div className="bg-[#009444] w-[110px] h-[40px] text-[white] rounded-[4px] text-center mt-4 pt-[8px] justify-center items-center mx-auto lg:ml-[490px]">
-                <button onClick={()=>handleShow(btn)}>{button}</button>
+            <div className={arr.length>4 && btn?`bg-[#009444] w-[110px] h-[40px] text-[white] rounded-[4px] text-center mt-4 pt-[8px] justify-center items-center mx-auto lg:ml-[490px]`:'hidden'}>
+                <button onClick={()=>handleShow(arr.length)}>See All</button>
             </div>
 
 

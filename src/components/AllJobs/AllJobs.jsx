@@ -14,9 +14,9 @@ const AllJobs = ({job}) => {
                 </div>
                 <div style={{backgroundColor:`${background_color}`}} className="p-4 rounded-b-[8px]">
                     <div style={{backgroundColor:`${text_bg}`}} className="w-[70px] h-[25px] rounded-[4px] text-center">
-                        <h1 style={{color:`${text_color}`}} className="text-[14px] font-[500]">{necessity}</h1>
+                        <h1 style={{color:`${text_color}`}} className="text-[14px] font-Inter font-[500]">{necessity}</h1>
                     </div>
-                    <p style={{color:`${text_color}`}} className="text-[20px] font-[600]">{title}</p>
+                    <p style={{color:`${text_color}`}} className="text-[20px] font-Inter font-[600]">{title}</p>
 
                 </div>
             </div>

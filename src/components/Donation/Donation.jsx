@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getArray } from "../../utility/locals";
 import Donates from "../Donates/Donates";
+import NoDonation from "../NoDonation/NoDonation";
 
 
 const Donation = () => {
@@ -21,7 +22,7 @@ const Donation = () => {
     return (
         <div className="">
             {
-                arr.length>0?<Donates arr={arr}></Donates>:""
+                arr.length>0?<Donates arr={arr}></Donates>:<NoDonation></NoDonation>
             }
 
 
