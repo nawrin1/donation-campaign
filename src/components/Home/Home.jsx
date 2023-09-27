@@ -37,7 +37,7 @@ const Home = () => {
     return (
         <div>
                 <Banner handleClick={handleClick}></Banner>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1100px] mx-4 lg:mx-auto gap-4 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1100px] mx-4 lg:mx-auto gap-4 mt-16 mb-28 ">
                     {
                         con?data.map((job,idx)=><AllJobs key={idx} job={job}></AllJobs>): jobs.map((job,idx)=><AllJobs key={idx} job={job}></AllJobs>)      
                     }

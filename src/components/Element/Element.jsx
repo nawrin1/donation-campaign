@@ -16,7 +16,7 @@ const Element = ({element}) => {
                 <p className="text-[19px] font-Inter font-[600]">{title}</p>
                 <p style={{color:`${text_color}`}} className="text-[16px] font-[600] font-Inter lg:mb-2 md:mb-2">${donation_amount}.00</p>
                 <div className=" justify-start">
-                    <button style={{backgroundColor:`${text_color}`}} className="btn font-Inter text-[white]">View Details</button>
+                    <button style={{backgroundColor:`${text_color}`}} className="pt-[9px] pb-[9px] pl-[16px] pr-[16px] rounded-[4px] font-Inter text-[white]">View Details</button>
                 </div>
             </div>
         </div>

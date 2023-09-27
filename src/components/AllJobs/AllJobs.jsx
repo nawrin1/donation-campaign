@@ -16,7 +16,7 @@ const AllJobs = ({job}) => {
                     <div style={{backgroundColor:`${text_bg}`}} className="w-[70px] h-[25px] rounded-[4px] text-center">
                         <h1 style={{color:`${text_color}`}} className="text-[14px] font-Inter font-[500]">{necessity}</h1>
                     </div>
-                    <p style={{color:`${text_color}`}} className="text-[18px] font-Inter font-[600]">{title}</p>
+                    <p style={{color:`${text_color}`}} className="text-[18px] font-Inter font-[600] mt-2">{title}</p>
 
                 </div>
             </div>
